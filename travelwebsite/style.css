@@ -1,5 +1,4 @@
 *{
-    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,7 +7,6 @@
     list-style-type: none;
     scroll-behavior: smooth;
 }
-
 :root{
     --bg-color: #fff;
     --text-color: #221314;
@@ -18,40 +16,35 @@
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
-
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
 }
-
 section{
     padding: 10px 4%;
 }
-
 .navbar a{
     color: black;
 }
-
 .home{
     position: relative;
     width: 100%;
     height: 100vh;
     background-size: cover;
     align-items: center;
-    background: url(images/boat.jpg);
+    background: url(images/travel.jpg);
 }
 .home-text h1{
     line-height: 1.2;
-    color: white;
+    color: rgb(143, 107, 209);;
     font-size: 80px;
     font-family: 'Paytone One', sans-serif;
 }
 .home-text p{
-    color: white;
-    font-size: 20px;
-
+    color: rgb(0, 0, 0);
+    font-size: 18px;
 }
 .home-btn{
     display:inline-block;
@@ -62,16 +55,13 @@ section{
     border-radius: 4px;
     transition: ease .40s;
 }
-
 .row-items{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-gap: 2rem;
     align-items: center;
-    text-align: center;
-    
+    text-align: center; 
 }
-
 .text h1{
     font-size: 60px;
     text-align: center  ;
@@ -80,22 +70,13 @@ section{
     padding-left: 650px;
     font-size: 20px;
 }
-
-img {
-    border-radius: 3%;
-  }
-
-  .city-img :hover{
+.city-img :hover{
     transform: scale(1.03);
   }
-
  */
-
-
 img.pic{
     float: left;
 }
-
 .testimonials-text h1{
     line-height: 1.2;
     color: rgb(5, 11, 57);
@@ -104,27 +85,23 @@ img.pic{
 }
 .testimonials-text h3 {
     color: rgb(5, 7,55);
-
     padding: 5px;
 }
-
 img.man {
     border-radius: 60%;
   }
-
 .text-right{
     text-align: right;
     font-size: 20px;
     color:#5a7184
-  }
-
-  .jadoo-div{
+}
+.jadoo-div{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
-  }
+}
 .main{
     display: flex;
     flex-wrap: wrap ;
@@ -133,7 +110,6 @@ img.man {
     padding: 20px 0;
     text-align: center;
     font-size: 18px;
-    
 }
 .list{
     line-height: 2.2;
@@ -145,7 +121,6 @@ img.man {
 .end-text p{
     color:#5a7184;
     font-size: 20px;
-
 }
 a{
     color:#5a7184
@@ -156,23 +131,19 @@ a{
 .list h1{
     font-size: 40px;
 }
-
 img.ads{
     padding: 10%;
 }
-
 .sub{
     text-align: center;
     font-family: 'Paytone One', sans-serif;
     font-size: 40px;
     color:#5a7184
-
 }
 .form input{
     font-size: 20px;
     border-color: white;
 }
-
 .sub-btn{
     display:inline-block;
     font-size: 15px;
@@ -181,16 +152,79 @@ img.ads{
     color: white;
     border-radius: 6px;
 }
-
 .hotels p{
     align-items: center;
     text-align: center;
-    font-family: 'Paytone One', sans-serif;
-
-    font-size: 20px;
+    font-size: 17px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
-
 .hotels {
     align-items: center;
     text-align: center;
+}
+.desc{
+    position: absolute;
+    line-height: 1.5;
+    top: 300px;
+    left: 200px;
+    background-color: #fff;
+    color:#323b43;
+    position: left;
+    font-family:'LinotypeUniversW01-Bold 723691';
+    font-size: 27px;
+    vertical-align:middle;
+    line-height: 34px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+p.orange{
+    color: rgb(255, 255, 255);
+}
+.desc h3{
+    font-size: large;   
+}
+img.radius{
+    border-radius: 3%;
+}
+.italy-text{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+p.paragraph{
+    font-style: italic; 
+    color: #5a7184;
+}
+.whatToDo{
+    padding-left: 300px;
+    padding-right: 300px;
+} 
+p.changeColor{
+    color: #1b252d;
+}
+
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+img,p {
+	/* Create View Timeline */
+	view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --revealing-image;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
 }
