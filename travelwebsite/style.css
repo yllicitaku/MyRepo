@@ -22,24 +22,34 @@
     align-items: center;
     padding: 30px 10%;
 }
+.signUp{
+    border-color: #221314;
+    border-radius: 13%;
+
+}
 section{
     padding: 10px 4%;
 }
 .navbar a{
     color: black;
 }
+.playdemo{
+    margin-top: 23px;
+}
 .home{
     position: relative;
     width: 100%;
+    padding-left: 7%;
     height: 100vh;
     background-size: cover;
     align-items: center;
-    background: url(images/travel.jpg);
+    /* background: url(images/travel.jpg); */
 }
 .home-text h1{
     line-height: 1.2;
-    color: rgb(143, 107, 209);;
-    font-size: 80px;
+    color: rgb(6, 26, 78);;
+    font-size: 70px;
+   
     font-family: 'Paytone One', sans-serif;
 }
 .home-text p{
@@ -47,18 +57,31 @@ section{
     font-size: 18px;
 }
 .home-btn{
-    display:inline-block;
-    font-size: 16px;
-    padding: 15px 30px;
-    background: rgb(232, 152, 4);
+    /* display:inline-block; */
+    font-size: 14px;
+    padding:12px 12px;
+    background: hwb(39 10% 4%);
     color: white;
     border-radius: 4px;
-    transition: ease .40s;
+    height:12%;
+    width: 23%;
 }
+
+.parent {
+    display: flex;
+  }
+.traveller{
+    margin-right: 320px;
+    margin-top: -18px;
+}
+
+#button{
+    margin: 15px;
+}
+
 .row-items{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     align-items: center;
     text-align: center; 
 }
@@ -77,23 +100,30 @@ section{
 img.pic{
     float: left;
 }
-.testimonials-text h1{
+.testimonials-text p{
     line-height: 1.2;
-    color: rgb(5, 11, 57);
-    font-size: 60px;
+    font-size: 20px;
     font-family: 'Paytone One', sans-serif;
 }
-.testimonials-text h3 {
-    color: rgb(5, 7,55);
+.testimonials-text p1 {
+    font-size: 50px;
     padding: 5px;
 }
+.testimonials-text{
+    padding-left: 150px;
+
+}
 img.man {
-    border-radius: 60%;
+    margin-right: 49%;
   }
 .text-right{
-    text-align: right;
-    font-size: 20px;
+    text-align: left;
+    font-size: 17px;
     color:#5a7184
+}
+.paragraph2{
+    padding-left: 620px;
+    
 }
 .jadoo-div{
     display: grid;
@@ -107,7 +137,7 @@ img.man {
     flex-wrap: wrap ;
 }
 .footer{
-    padding: 20px 0;
+    padding: 14px 2px 12px ; 
     text-align: center;
     font-size: 18px;
 }
@@ -133,11 +163,12 @@ a{
 }
 img.ads{
     padding: 10%;
+    align-items: center;
 }
 .sub{
     text-align: center;
     font-family: 'Paytone One', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color:#5a7184
 }
 .form input{
@@ -146,11 +177,14 @@ img.ads{
 }
 .sub-btn{
     display:inline-block;
-    font-size: 15px;
-    padding: 11px 26px;
-    background: rgb(232, 152, 4);
+    font-size: 13px;
+    padding: 12px 20px;
+    background:#ff8c5c;
     color: white;
     border-radius: 6px;
+}
+.sub input{
+    font-size: 15px
 }
 .hotels p{
     align-items: center;
@@ -180,7 +214,8 @@ img.ads{
 }
 
 p.orange{
-    color: rgb(255, 255, 255);
+    font-weight:bolder;
+    color: rgb(227, 100, 26);
 }
 .desc h3{
     font-size: large;   
@@ -204,8 +239,11 @@ p.changeColor{
     color: #1b252d;
 }
 
+.first,.second, .third  h4, p{
+    color:#58636d
+}
 
-@keyframes reveal {
+/* @keyframes reveal {
 	from {
 		opacity: 0;
 		clip-path: inset(45% 20% 45% 20%);
@@ -214,17 +252,33 @@ p.changeColor{
 		opacity: 1;
 		clip-path: inset(0% 0% 0% 0%);
 	}
-}
+} */
 
-img,p {
-	/* Create View Timeline */
+/* img:not(.hotel4,.traveller , #button) {
 	view-timeline-name: --revealing-image;
 	view-timeline-axis: block;
 
-	/* Attach animation, linked to the  View Timeline */
 	animation: linear reveal both;
 	animation-timeline: --revealing-image;
 
-	/* Tweak range when effect should run*/
 	animation-range: entry 25% cover 50%;
+} */
+
+.book{
+    padding-left: 150px;
+}
+
+.first, .second, .third {
+    display: flex;
+  }
+
+  .book h1{
+    line-height: 1.6;
+    color: rgb(3, 18, 56);;
+    font-size: 50px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+img.trip{
+    margin-right: 100px;
 }
