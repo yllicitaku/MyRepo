@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+  <title>Blog App</title>
+</head>
+<body>
+  <div>
+    <a id="addPostButton" href="/Posts/post.html">Add new Post</a>
+    <a id="myPostsButton" href="/Users/UserPosts.html" >My Posts</a>
+    <a id="logoutButton" href="#" >Log Out</a>
+    <a id="registerButton" href="/Users/UserRegister.html">Register</a>
+    <a id="loginButton" href="/Login/login.html">Login</a>
+  </div>
+
+  <h2>Posts List</h2>
+
+  <ul id="postList"></ul>
+  <div id="likedUsersModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModalBtn">&times;</span>
+      <p id="likedUsersContent">Liked Users:</p>
+    </div>
+  </div>
+  
+  
+  <script src="/Posts/post.js"></script>
+  <script src="/Login/logout.js"></script>
+
+</body>
+</html>

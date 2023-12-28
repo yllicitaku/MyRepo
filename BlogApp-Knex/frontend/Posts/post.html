@@ -1,0 +1,32 @@
+<!-- post.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Create Post</title>
+</head>
+<body>
+  <a href="/index.html">Home</a>
+
+  <h1>Create Post</h1>
+
+  <form id="postForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="body">Body:</label>
+    <textarea id="body" name="body" rows="4" required></textarea>
+
+    <button type="submit">Post</button>
+  </form>
+
+  <script type="module" src="createPost.js"></script>
+
+</body>
+</html>
